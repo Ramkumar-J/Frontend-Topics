@@ -9,11 +9,14 @@
     </head>
     <body>
         <h1>Welcome to CSS Flexbox</h1>
+
+        <!-- Flexbox properties learning  -->
         <div class="container">
-            <div class="boxes">Box 1</div>
-            <div class="boxes">Box 2</div>
-            <div class="boxes">Box 3</div>
-            <div class="boxes">Box 4</div>
+            <div class="boxes" style="order:4">Box 1</div>
+            <div class="boxes" style="flex-grow:1;order: 3;">Box 2</div>
+            <div class="boxes" style="flex-grow:1">Box 3</div>
+            <div class="boxes" style="flex-shrink:1">Box 4</div>
+            <!-- <div class="boxes">Box 4</div>
             <div class="boxes">Box 5</div>
             <div class="boxes">Box 6</div>
             <div class="boxes">Box 7</div>
@@ -22,8 +25,30 @@
             <div class="boxes">Box 10</div>
             <div class="boxes">Box 11</div>
             <div class="boxes">Box 12</div>
-            <div class="boxes">Box 13</div>
-            
+            <div class="boxes">Box 13</div>  -->
         </div>
+
+        <!-- Center a div and its content -->
+        <div class="box">
+            <div class="content">
+            <p>Lorem ipsum dolor</p>
+        </div>
+        </div>
+
+        <!-- Navbar or Header design -->
+           <header class="navbar">
+               <img class="logo" src="https://yt3.ggpht.com/yti/APfAmoFJdzPN26poNitp6TgljGVMcOvPaX4bENCf66pZkQ=s88-c-k-c0x00ffffff-no-rj-mo">
+               <nav>
+                <ul style="list-style:none" class="nav-menu">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+                 </ul>
+               </nav>
+               <ul style="list-style:none" class="nav-menu">
+                <li><input class="sea" type="text"></li>
+                <li><a class="nav-link" href="#"><button type="search">Search</button></a></li>
+            </ul>   
+           </header>
     </body>
 </html>
