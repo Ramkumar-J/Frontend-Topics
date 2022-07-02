@@ -67,31 +67,105 @@ p{
     margin:10px;
 } */
 
-body{
-    background: rgb(192, 35, 35);
-    padding: 0;
-    margin: 0;
+.gallary{
+    /* width:1200px; */
+    columns:5;
+    margin-right: 20px;
+    margin-top: 20px;
+    column-gap: 5px;
     
 }
 
-.container{
-    /* width:1200px; */
-    columns:4;
-    margin: 20px auto;
-    column-gap: 40px;
-}
-
-.container .box{
-    width:100%;
-    margin:20px;
+.gallary .pin{
+    max-width:100%;
+    margin:10px;
     height: 100%;
-    /* padding: 10px; */
-    background: #ffff;
+    /* background:rgb(223, 222, 222); */
     overflow: hidden;
-    border-radius: 5%;
+    position: relative;
+    /* color: rgb(255, 255, 255); */
+    
 }
 
-.container .box img{
-    max-width: 100%;
+.gallary .pin .pin-image{
+    width: 100%;
     height: 100%;
+    border-radius: 5%;
+    opacity:1;
+}
+
+.pin-image:hover{
+   opacity: 0.5;
+}
+
+.user-image {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+}
+
+.pin-icon{
+    position:absolute;
+    bottom:70px;
+    right:10px;
+    background-color: rgb(163, 162, 162);
+    opacity: 0.2;
+}
+/* .pin-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+.pin-button{
+    position:absolute;
+    top:10px;
+    right:10px;
+    opacity: 0.2;
+}
+/* .link{
+    position:absolute;
+    bottom:70px;
+    font-size: 12px;
+} */
+
+.pin-icon:hover{
+    opacity: 1;
+}
+.pin-button:hover{
+    opacity: 1;
+}
+
+.image-container{
+    opacity:1
+}
+
+.image-container:hover{
+    opacity:0.8;
+    cursor: zoom-in;
+}
+
+@media (max-width:1200px){
+    .gallary{
+        columns:4;
+    }
+}
+@media (max-width:998px){
+    .gallary{
+        columns:3;
+    }
+}
+@media (max-width:768px){
+    .gallary{
+        columns:2;
+    }
+}
+@media (max-width:576px){
+    .gallary{
+        columns:1;
+    }
+}
+@media (max-width:0px){
+    .gallary{
+        columns:1;
+    }
 }
